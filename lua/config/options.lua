@@ -3,3 +3,8 @@
 -- Add any additional options here
 local opt = vim.opt
 opt.relativenumber = false -- Relative line numbers
+
+-- SetFont
+local o = vim.o
+o.guifont = 'Firple:h9'
+
