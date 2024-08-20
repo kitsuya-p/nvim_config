@@ -6,5 +6,10 @@ opt.relativenumber = false -- Relative line numbers
 
 -- SetFont
 local o = vim.o
-o.guifont = 'Firple:h9'
+o.guifont = 'Firple:h10'
+
+-- for Neovide config
+if vim.g.neovide then
+  vim.g.neovide_cursor_vfx_mode = "sonicboom"
+end
 

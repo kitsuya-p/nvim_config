@@ -1,21 +1,9 @@
 return {
   {
-    "petertriho/nvim-scrollbar",
-    dependencies = {
-      "kevinhwang91/nvim-hlslens",
-      "lewis6991/gitsigns.nvim"
+    "sindrets/diffview.nvim",
+    keys = {
+      {"<leader>gdd","<cmd>DiffviewOpen head~1<cr>", desc = "open diffview with the last commit"},
+      {"<leader>gdh","<cmd>DiffviewFileHistory %<cr>", desc="open diffview with the current file"},
     },
-    lazy = false,
-    opts = {}
   },
-  {
-    "kevinhwang91/nvim-hlslens",
-    lazy = false,
-    opts = function()
-      -- require('hlslens').setup() is not required
-      require("scrollbar.handlers.search").setup({
-          -- hlslens config overrides
-      })
-    end,
-  }
 }
